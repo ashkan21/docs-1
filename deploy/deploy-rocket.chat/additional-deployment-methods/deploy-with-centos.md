@@ -88,7 +88,7 @@ PORT=3000
 * Set up the storage engine and replication for MongoDB.
 
 ```
-sudo sed -i "s/^#  engine:/  engine: mmapv1/"  /etc/mongod.conf
+sudo sed -i "s/^#  engine:/  engine: wiredtiger/"  /etc/mongod.conf
 ```
 
 ```
